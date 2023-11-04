@@ -27,6 +27,15 @@ const useStyles = makeStyles((theme) => ({
   body: {
     height: "inherit",
   },
+  rateJobButton: {
+    backgroundColor: "#3454D1", // Change to your desired background color
+    color: "#ffffff",          // Change to your desired text color
+    padding: "10px 20px",      // Adjust padding as needed
+    borderRadius: "5px",       // Adjust border radius as needed
+    '&:hover': {
+      backgroundColor: "#2340A1", // Change to your desired hover background color
+    }
+  },
   statusBlock: {
     width: "100%",
     height: "100%",

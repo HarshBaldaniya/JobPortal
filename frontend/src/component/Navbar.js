@@ -7,6 +7,7 @@ import {
   Link,
 } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+import "./index.css"
 
 import isAuth, { userType } from "../lib/isAuth";
 
@@ -33,7 +34,7 @@ const Navbar = (props) => {
 
   return (
     <AppBar position="fixed">
-      <Toolbar>
+      <Toolbar className="navbar">
         <Typography variant="h6" className={classes.title} >
           Job Portal
         </Typography>
