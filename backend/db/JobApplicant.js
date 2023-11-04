@@ -25,7 +25,7 @@ let schema = new mongoose.Schema(
         },
         endYear: {
           type: Number,
-          max: new Date().getFullYear(),
+          max: 2099,
           validate: [
             { validator: Number.isInteger, msg: "Year should be an integer" },
             {

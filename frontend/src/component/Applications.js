@@ -69,6 +69,7 @@ const ApplicationTile = (props) => {
       .then((response) => {
         setRating(response.data.rating);
         console.log(response.data);
+        console.log("Application"+ application)
       })
       .catch((err) => {
         // console.log(err.response);

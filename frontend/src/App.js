@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Grid, makeStyles } from "@material-ui/core";
 
@@ -40,6 +40,7 @@ function App() {
     severity: "",
     message: "",
   });
+
   return (
     <BrowserRouter>
       <SetPopupContext.Provider value={setPopup}>
